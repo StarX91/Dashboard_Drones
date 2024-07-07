@@ -1,29 +1,20 @@
 import React from "react";
+import Drone from "./Drone";
+import Live from "./Live";
 
 const Data = () => {
   return (
     <div className="bg-black flex justify-center h-screen py-15">
-      <div className="bg-zinc-900 mx-28 my-16 w-10/12 rounded-3xl">
-        <div>
-          <div className="bg-stone-300 flex my-14 h-20 w-1/6 rounded-2xl ">
-            <p>FLight</p>
-          </div>
-          <div className="bg-stone-300 my-16 h-20 w-1/6 rounded-2xl">
-            <p>FLight</p>
-            <p>0</p>
-          </div>
-          <div className="bg-stone-300 my-16 h-20 w-1/6 rounded-2xl ">
-            <p>FLight</p>
-            <p>0</p>
-          </div>
-          <div className="bg-stone-300 my-16 h-20 w-1/6 rounded-2xl ">
-            <p>FLight</p>
-            <p>0</p>
-          </div>
-          <div className="bg-stone-300 my-16 h-20 w-1/6 rounded-2xl ">
-            <p>FLight</p>
-            <p>0</p>
-          </div>
+      <div className="bg-zinc-900 flex  mx-28 my-16 w-10/12 rounded-3xl">
+        <div className="flex-col w-1/5">
+          <Live name="Flight" imgurl="" />
+          <Live name="Acres" imgurl="" />
+          <Live name="Drones" imgurl="" />
+          <Live name="Live" imgurl="" />
+          <Live name="Pilots" imgurl="" />
+        </div>
+        <div className="w-10/12 ">
+          <Drone />
         </div>
       </div>
     </div>
