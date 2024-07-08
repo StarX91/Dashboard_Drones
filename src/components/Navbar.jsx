@@ -1,67 +1,52 @@
 import React from "react";
-import starx from "../assets/StarX91-Logo.svg";
-import dash from "../assets/dashboard.svg";
-import drone from "../assets/drone.svg";
-import control from "../assets/square.svg";
-import group from "../assets/group.svg";
-import setting from "../assets/settings.svg";
-import add from "../assets/add.svg";
+import Starx from "../assets/StarX91-Logo.svg";
+import { MdDashboard } from "react-icons/md";
+import { SlCalender } from "react-icons/sl";
+import { IoIosPeople } from "react-icons/io";
+import { IoSettingsSharp } from "react-icons/io5";
+import { IoIosAddCircle } from "react-icons/io";
 
 const Navbar = () => {
   return (
-    <div className="bg-[#101010] sticky top-0 flex justify-between w-full h-20">
-      {/* STARX91 LOGO */}
-      <div className="bg-[#FFFFFF] sticky my-4 ml-10 mx-auto px-5 rounded-3xl ">
-        <img
-          src={starx}
-          alt="starx91 logo"
-          class="w-20 ml-5 mt-2 max-width-full"
-        />
+    <div className="flex bg-black w-full h-20 ">
+      <div className="flex w-36 bg-white my-4 ml-12 h-12 rounded-3xl">
+        <img src={Starx} alt="starx logo" className="size-32 pb-20 pl-6" />
       </div>
-
-      {/* MID CONTAINER */}
-
-      <div className="bg-[#161616]  w-fit mr-96 flex  my-3 rounded-3xl h-16">
-        <div className="bg-[#2C2C2C] w-16 h-12 ml-8 my-1 rounded ">
-          <img src={dash} alt="dashboard image" class="w-8  mx-4 mt-1" />
-
-          <div className=" text-[#9D9D9D] text-[8px] mx-3 font-semibold">
+      <div className="flex bg-zinc-900 ml-80  my-2 w-1/2 rounded-3xl">
+        <button className="bg-zinc-800 w-16 h-14 ml-20 my-1 rounded-sm">
+          <MdDashboard className="text-zinc-300 w-8 h-8 ml-4" />
+          <p className="text-zinc-300 text-[12px] font-semibold">Services</p>
+        </button>
+        <button className=" w-16 h-14 ml-20 my-1 rounded-sm">
+          <MdDashboard className="text-zinc-300 w-8 h-8 ml-5" />
+          <p className="text-zinc-300  text-[12px] ml-1 my-1 font-semibold">
             Dashboard
-          </div>
-        </div>
-        <div className="bg-[#2C2C2C] ml-12 w-16 h-12 rounded mt-1">
-          <img src={drone} alt="Drone Image" class="mx-4 mt-1 w-8 " />
-          <div className=" text-[#9D9D9D] text-[8px] ml-5 font-semibold">
-            Drone
-          </div>
-        </div>
-        <div className="bg-[#2C2C2C] ml-12 w-16 h-12 rounded mt-1">
-          <img src={control} alt="Drone Image" class="mx-4 mt-1 w-8" />
-          <div className=" text-[#9D9D9D] text-[8px] ml-1 font-semibold">
-            Control Center
-          </div>
-        </div>
-        <div className="bg-[#2C2C2C] ml-12 w-16 h-12 rounded mt-1">
-          <img src={group} alt="Drone Image" class="mx-4 mt-1 w-8" />
-          <div className=" text-[#9D9D9D] text-[8px] ml-5 font-semibold">
+          </p>
+        </button>
+        <button className=" w-16 h-14 ml-20 my-1 rounded-sm">
+          <SlCalender className="text-zinc-300 w-8 h-8 ml-4" />
+          <p className="text-zinc-300  text-[12px] my-1 font-semibold">
+            Planner
+          </p>
+        </button>
+        <button className=" w-16 h-14 ml-20 my-1 rounded-sm">
+          <IoIosPeople className="text-zinc-300 w-8 h-8 ml-4" />
+          <p className="text-zinc-300  text-[12px]  my-1 font-semibold">
             Teams
-          </div>
-        </div>
-        <div className="bg-[#2C2C2C] ml-12 w-16 h-12 rounded mt-1">
-          <img src={setting} alt="Drone Image" class="mx-4 mt-1 w-8" />
-          <div className=" text-[#9D9D9D] text-[8px] mx-5 font-semibold">
-            Setting
-          </div>
-        </div>
-        <div className="bg-[#2C2C2C] ml-12 w-16 h-12 rounded mt-1">
-          <img src={add} alt="Drone Image" class="mx-4 mt-1 w-8" />
-          <div className=" text-[#9D9D9D] text-[8px] mx-6 font-semibold">
-            Add
-          </div>
-        </div>
+          </p>
+        </button>
+        <button className=" w-16 h-14 ml-20 my-1 rounded-sm">
+          <IoSettingsSharp className="text-zinc-300 w-8 h-8 ml-4" />
+          <p className="text-zinc-300  text-[12px]  my-1 font-semibold">
+            Settings
+          </p>
+        </button>
+        <button className=" w-16 h-14 ml-20 my-1 rounded-sm">
+          <IoIosAddCircle className="text-zinc-300 w-8 h-8 ml-4" />
+          <p className="text-zinc-300  text-[12px] my-1 font-semibold">Add</p>
+        </button>
       </div>
-      {/*USER PROFILE BOX */}
-      <div className="bg-[#3E3E3E] rounded-full  w-10 h-12  mt-3 "></div>
+      <div className="flex bg-zinc-700 w-12 my-4 ml-96 mr-4 h-12 rounded-full"></div>
     </div>
   );
 };
