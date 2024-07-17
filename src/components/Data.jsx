@@ -9,31 +9,35 @@ import { LuRadio } from "react-icons/lu";
 
 const Data = () => {
   return (
-    <div className="bg-black flex justify-center h-screen py-15">
-      <div className="bg-zinc-900 flex  mx-28 my-16 w-10/12 rounded-3xl">
-        <div className="flex-col w-1/5 ">
+    <div className="bg-black flex justify-center min-h-screen py-15">
+      <div className="bg-zinc-900 flex flex-col md:flex-row mx-4 md:mx-28 my-8 md:my-16 w-full md:w-10/12 rounded-3xl p-4">
+        <div className="flex flex-col w-full md:w-1/5 space-y-4">
           <Live
             name="Flight"
-            imgurl={<MdFlight className="size-12 mx-2 my-2 text-white" />}
+            imgurl={<MdFlight className="w-6 h-6 md:w-12 md:h-12 text-white" />}
           />
           <Live
             name="Acres"
-            imgurl={<RxStack className="size-12 mx-2 my-2 text-white" />}
+            imgurl={<RxStack className="w-6 h-6 md:w-12 md:h-12 text-white" />}
           />
           <Live
             name="Drones"
-            imgurl={<PiDroneFill className="size-12 mx-2 my-2 text-white" />}
+            imgurl={
+              <PiDroneFill className="w-6 h-6 md:w-12 md:h-12 text-white" />
+            }
           />
           <Live
             name="Live"
-            imgurl={<LuRadio className="size-12 mx-2 my-2 text-white" />}
+            imgurl={<LuRadio className="w-6 h-6 md:w-12 md:h-12 text-white" />}
           />
           <Live
             name="Pilots"
-            imgurl={<CgProfile className="size-12 mx-2 my-2 text-white" />}
+            imgurl={
+              <CgProfile className="w-6 h-6 md:w-12 md:h-12 text-white" />
+            }
           />
         </div>
-        <div className="w-10/12 ">
+        <div className="w-full md:w-10/12 mt-4 ml-4 md:mt-0">
           <Drone />
         </div>
       </div>

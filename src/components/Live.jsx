@@ -2,12 +2,12 @@ import React from "react";
 
 const Live = ({ name, imgurl }) => {
   return (
-    <div className="flex justify-between bg-stone-300  my-16 h-20 w-10/12 rounded-2xl">
+    <div className="flex justify-between bg-stone-300 my-4 h-20 w-full rounded-2xl p-4">
       <div>
-        <p className="text-zinc-700 text-xl mx-5  py-1 font-bold ">{name}</p>
-        <p className="text-4xl text-zinc-700 font-bold mx-4">0</p>
+        <p className="text-zinc-700 text-lg md:text-xl font-bold">{name}</p>
+        <p className="text-2xl md:text-4xl text-zinc-700 font-bold">0</p>
       </div>
-      <div className="flex bg-zinc-700 my-2 w-1/4 mr-2 rounded-full ">
+      <div className="flex items-center justify-center bg-zinc-700 w-12 h-12 md:w-16 md:h-16 rounded-full">
         {imgurl}
       </div>
     </div>
